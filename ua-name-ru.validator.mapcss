@@ -1,0 +1,137 @@
+meta {
+  title: "name:ru for streets in Ukraine";
+  description: "Check and fix name:ru for streets in Ukraine";
+  author: "Serhii Muchychka";
+  min-josm-version: "11424"; /* due to territory selectors */
+  baselanguage: "uk";
+}
+meta[lang=uk] {
+  title: "name:ru для вулиць в Україні";
+  description: "Перевірка й коригування name:ru для вулиць в Україні. Приклади виправлень: Красная улица» -> Червоная улица», Пограничная улица» -> Прикордонная улица»";
+}
+way[highway]["name:ru"][inside("UA")][name="Будівельна вулиця"]["name:ru"!="Будивельная улица"],
+relation[type=associatedStreet]["name:ru"][inside("UA")][name="Будівельна вулиця"]["name:ru"!="Будивельная улица"] {
+  throwWarning: tr(
+    "У назві «Будівельна вулиця» name:ru повинен бути «Будивельная улица» замість «{1}»",
+    "{1.value}"
+  );
+  group: tr("Російська назва не відповідає правилам перекладу власних назв");
+  fixAdd: "name:ru=Будивельная улица";
+}
+way[highway]["name:ru"][inside("UA")][name="Весняна вулиця"]["name:ru"!="Весняная улица"],
+relation[type=associatedStreet]["name:ru"][inside("UA")][name="Весняна вулиця"]["name:ru"!="Весняная улица"] {
+  throwWarning: tr(
+    "У назві «Весняна вулиця» name:ru повинен бути «Весняная улица» замість «{1}»",
+    "{1.value}"
+  );
+  group: tr("Російська назва не відповідає правилам перекладу власних назв");
+  fixAdd: "name:ru=Весняная улица";
+}
+way[highway]["name:ru"][inside("UA")][name="Енергетична вулиця"]["name:ru"!="Энергетичная улица"],
+relation[type=associatedStreet]["name:ru"][inside("UA")][name="Енергетична вулиця"]["name:ru"!="Энергетичная улица"] {
+  throwWarning: tr(
+    "У назві «Енергетична вулиця» name:ru повинен бути «Энергетичная улица» замість «{1}»",
+    "{1.value}"
+  );
+  group: tr("Російська назва не відповідає правилам перекладу власних назв");
+  fixAdd: "name:ru=Энергетичная улица";
+}
+way[highway]["name:ru"][inside("UA")][name="Залізнична вулиця"]["name:ru"!="Зализничная улица"],
+relation[type=associatedStreet]["name:ru"][inside("UA")][name="Залізнична вулиця"]["name:ru"!="Зализничная улица"] {
+  throwWarning: tr(
+    "У назві «Залізнична вулиця» name:ru повинен бути «Зализничная улица» замість «{1}»",
+    "{1.value}"
+  );
+  group: tr("Російська назва не відповідає правилам перекладу власних назв");
+  fixAdd: "name:ru=Зализничная улица";
+}
+way[highway]["name:ru"][inside("UA")][name="Зоряна вулиця"]["name:ru"!="Зоряная улица"],
+relation[type=associatedStreet]["name:ru"][inside("UA")][name="Зоряна вулиця"]["name:ru"!="Зоряная улица"] {
+  throwWarning: tr(
+    "У назві «Зоряна вулиця» name:ru повинен бути «Зоряная улица» замість «{1}»",
+    "{1.value}"
+  );
+  group: tr("Російська назва не відповідає правилам перекладу власних назв");
+  fixAdd: "name:ru=Зоряная улица";
+}
+way[highway]["name:ru"][inside("UA")][name="Лісова вулиця"]["name:ru"!="Лесовая улица"],
+relation[type=associatedStreet]["name:ru"][inside("UA")][name="Лісова вулиця"]["name:ru"!="Лесовая улица"] {
+  throwWarning: tr(
+    "У назві «Лісова вулиця» name:ru повинен бути «Лесовая улица» замість «{1}»",
+    "{1.value}"
+  );
+  group: tr("Російська назва не відповідає правилам перекладу власних назв");
+  fixAdd: "name:ru=Лесовая улица";
+}
+way[highway]["name:ru"][inside("UA")][name="Прикордонна вулиця"]["name:ru"!="Прикордонная улица"],
+relation[type=associatedStreet]["name:ru"][inside("UA")][name="Прикордонна вулиця"]["name:ru"!="Прикордонная улица"] {
+  throwWarning: tr(
+    "У назві «Прикордонна вулиця» name:ru повинен бути «Прикордонная улица» замість «{1}»",
+    "{1.value}"
+  );
+  group: tr("Російська назва не відповідає правилам перекладу власних назв");
+  fixAdd: "name:ru=Прикордонная улица";
+}
+way[highway]["name:ru"][inside("UA")][name="Промислова вулиця"]["name:ru"!="Промысловая улица"],
+relation[type=associatedStreet]["name:ru"][inside("UA")][name="Промислова вулиця"]["name:ru"!="Промысловая улица"] {
+  throwWarning: tr(
+    "У назві «Промислова вулиця» name:ru повинен бути «Промысловая улица» замість «{1}»",
+    "{1.value}"
+  );
+  group: tr("Російська назва не відповідає правилам перекладу власних назв");
+  fixAdd: "name:ru=Промысловая улица";
+}
+way[highway]["name:ru"][inside("UA")][name="Ринкова вулиця"]["name:ru"!="Рынковая улица"],
+relation[type=associatedStreet]["name:ru"][inside("UA")][name="Ринкова вулиця"]["name:ru"!="Рынковая улица"] {
+  throwWarning: tr(
+    "У назві «Ринкова вулиця» name:ru повинен бути «Рынковая улица» замість «{1}»",
+    "{1.value}"
+  );
+  group: tr("Російська назва не відповідає правилам перекладу власних назв");
+  fixAdd: "name:ru=Рынковая улица";
+}
+way[highway]["name:ru"][inside("UA")][name="Селянська вулиця"]["name:ru"!="Селянская улица"],
+relation[type=associatedStreet]["name:ru"][inside("UA")][name="Селянська вулиця"]["name:ru"!="Селянская улица"] {
+  throwWarning: tr(
+    "У назві «Селянська вулиця» name:ru повинен бути «Селянская улица» замість «{1}»",
+    "{1.value}"
+  );
+  group: tr("Російська назва не відповідає правилам перекладу власних назв");
+  fixAdd: "name:ru=Селянская улица";
+}
+way[highway]["name:ru"][inside("UA")][name="Травнева вулиця"]["name:ru"!="Травневая улица"],
+relation[type=associatedStreet]["name:ru"][inside("UA")][name="Травнева вулиця"]["name:ru"!="Травневая улица"] {
+  throwWarning: tr(
+    "У назві «Травнева вулиця» name:ru повинен бути «Травневая улица» замість «{1}»",
+    "{1.value}"
+  );
+  group: tr("Російська назва не відповідає правилам перекладу власних назв");
+  fixAdd: "name:ru=Травневая улица";
+}
+way[highway]["name:ru"][inside("UA")][name="Цегельна вулиця"]["name:ru"!="Цегельная улица"],
+relation[type=associatedStreet]["name:ru"][inside("UA")][name="Цегельна вулиця"]["name:ru"!="Цегельная улица"] {
+  throwWarning: tr(
+    "У назві «Цегельна вулиця» name:ru повинен бути «Цегельная улица» замість «{1}»",
+    "{1.value}"
+  );
+  group: tr("Російська назва не відповідає правилам перекладу власних назв");
+  fixAdd: "name:ru=Цегельная улица";
+}
+way[highway]["name:ru"][inside("UA")][name="Червона вулиця"]["name:ru"!="Червоная улица"],
+relation[type=associatedStreet]["name:ru"][inside("UA")][name="Червона вулиця"]["name:ru"!="Червоная улица"] {
+  throwWarning: tr(
+    "У назві «Червона вулиця» name:ru повинен бути «Червоная улица» замість «{1}»",
+    "{1.value}"
+  );
+  group: tr("Російська назва не відповідає правилам перекладу власних назв");
+  fixAdd: "name:ru=Червоная улица";
+}
+way[highway]["name:ru"][inside("UA")][name="Червоногірна вулиця"]["name:ru"!="Червоногорная улица"],
+relation[type=associatedStreet]["name:ru"][inside("UA")][name="Червоногірна вулиця"]["name:ru"!="Червоногорная улица"] {
+  throwWarning: tr(
+    "У назві «Червоногірна вулиця» name:ru повинен бути «Червоногорная улица» замість «{1}»",
+    "{1.value}"
+  );
+  group: tr("Російська назва не відповідає правилам перекладу власних назв");
+  fixAdd: "name:ru=Червоногорная улица";
+}

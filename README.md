@@ -5,5 +5,5 @@ Currently, the project is licensed under Open Data Commons Open Database License
 
 https://opendatacommons.org/licenses/odbl/
 
-Some data is used from OpenStreetMap
+Used some data from OpenStreetMap
 https://www.openstreetmap.org/

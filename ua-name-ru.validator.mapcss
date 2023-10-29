@@ -249,11 +249,11 @@ relation[type=associatedStreet]["name:ru"][inside("UA")][name="Ставкова 
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Ставковая улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Старомлинська вулиця"]["name:ru"!="Старомлыновская улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Старомлинська вулиця"]["name:ru"!="Старомлыновская улица"] {
-  throwWarning: tr("У назві «Старомлинська вулиця» name:ru повинен бути «Старомлыновская улица» замість «{1}»", "{1.value}");
+way[highway]["name:ru"][inside("UA")][name="Старомлинська вулиця"]["name:ru"!="Старомлынская улица"],
+relation[type=associatedStreet]["name:ru"][inside("UA")][name="Старомлинська вулиця"]["name:ru"!="Старомлынская улица"] {
+  throwWarning: tr("У назві «Старомлинська вулиця» name:ru повинен бути «Старомлынская улица» замість «{1}»", "{1.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
-  fixAdd: "name:ru=Старомлыновская улица";
+  fixAdd: "name:ru=Старомлынская улица";
 }
 way[highway]["name:ru"][inside("UA")][name="Степова вулиця"]["name:ru"!="Степовая улица"],
 relation[type=associatedStreet]["name:ru"][inside("UA")][name="Степова вулиця"]["name:ru"!="Степовая улица"] {

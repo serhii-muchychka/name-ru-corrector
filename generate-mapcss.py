@@ -7,9 +7,8 @@ with codecs.open("ua-name-ru.validator.mapcss", mode="w", encoding="utf-8") as m
   with codecs.open("translations.txt", encoding='utf-8') as translations_file:
     for line in translations_file:
       name_uk, name_ru = line.strip().split(';', 2)
-      pattern = '''way[highway]["name:ru"][inside("UA")][name="{0}"]["name:ru"!="{1}"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="{0}"]["name:ru"!="{1}"] {{
-  throwWarning: tr("У назві «{0}» name:ru повинен бути «{1}» замість «{{1}}»", "{{1.value}}");
+      pattern = '''*["name:ru"][name="{0}"]["name:ru"!="{1}"].base_condition {{
+  throwWarning: tr("У назві «{0}» name:ru повинен бути «{1}» замість «{{0}}»", "{{0.value}}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru={1}";
 }}

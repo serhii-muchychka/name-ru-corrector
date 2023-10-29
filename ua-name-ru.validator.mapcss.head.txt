@@ -9,3 +9,7 @@ meta[lang=uk] {
   title: "name:ru для вулиць в Україні";
   description: "Перевірка й коригування name:ru для вулиць в Україні. Приклади виправлень: Красная улица» -> Червоная улица», Пограничная улица» -> Прикордонная улица»";
 }
+way[highway]["name:ru"][inside("UA")],
+relation[type=associatedStreet]["name:ru"][inside("UA")] {
+  set base_condition;
+}

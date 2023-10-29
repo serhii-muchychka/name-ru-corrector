@@ -9,297 +9,252 @@ meta[lang=uk] {
   title: "name:ru для вулиць в Україні";
   description: "Перевірка й коригування name:ru для вулиць в Україні. Приклади виправлень: Красная улица» -> Червоная улица», Пограничная улица» -> Прикордонная улица»";
 }
-way[highway]["name:ru"][inside("UA")][name="Березнева вулиця"]["name:ru"!="Березневая улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Березнева вулиця"]["name:ru"!="Березневая улица"] {
-  throwWarning: tr("У назві «Березнева вулиця» name:ru повинен бути «Березневая улица» замість «{1}»", "{1.value}");
+way[highway]["name:ru"][inside("UA")],
+relation[type=associatedStreet]["name:ru"][inside("UA")] {
+  set base_condition;
+}
+*["name:ru"][name="Березнева вулиця"]["name:ru"!="Березневая улица"].base_condition {
+  throwWarning: tr("У назві «Березнева вулиця» name:ru повинен бути «Березневая улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Березневая улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Будівельна вулиця"]["name:ru"!="Будивельная улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Будівельна вулиця"]["name:ru"!="Будивельная улица"] {
-  throwWarning: tr("У назві «Будівельна вулиця» name:ru повинен бути «Будивельная улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Будівельна вулиця"]["name:ru"!="Будивельная улица"].base_condition {
+  throwWarning: tr("У назві «Будівельна вулиця» name:ru повинен бути «Будивельная улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Будивельная улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Велика вулиця"]["name:ru"!="Великая улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Велика вулиця"]["name:ru"!="Великая улица"] {
-  throwWarning: tr("У назві «Велика вулиця» name:ru повинен бути «Великая улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Велика вулиця"]["name:ru"!="Великая улица"].base_condition {
+  throwWarning: tr("У назві «Велика вулиця» name:ru повинен бути «Великая улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Великая улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Велика Заводська вулиця"]["name:ru"!="Великая Заводская улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Велика Заводська вулиця"]["name:ru"!="Великая Заводская улица"] {
-  throwWarning: tr("У назві «Велика Заводська вулиця» name:ru повинен бути «Великая Заводская улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Велика Заводська вулиця"]["name:ru"!="Великая Заводская улица"].base_condition {
+  throwWarning: tr("У назві «Велика Заводська вулиця» name:ru повинен бути «Великая Заводская улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Великая Заводская улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Велика Хустецька вулиця"]["name:ru"!="Великая Хустецкая улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Велика Хустецька вулиця"]["name:ru"!="Великая Хустецкая улица"] {
-  throwWarning: tr("У назві «Велика Хустецька вулиця» name:ru повинен бути «Великая Хустецкая улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Велика Хустецька вулиця"]["name:ru"!="Великая Хустецкая улица"].base_condition {
+  throwWarning: tr("У назві «Велика Хустецька вулиця» name:ru повинен бути «Великая Хустецкая улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Великая Хустецкая улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Вереснева вулиця"]["name:ru"!="Вересневая улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Вереснева вулиця"]["name:ru"!="Вересневая улица"] {
-  throwWarning: tr("У назві «Вереснева вулиця» name:ru повинен бути «Вересневая улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Вереснева вулиця"]["name:ru"!="Вересневая улица"].base_condition {
+  throwWarning: tr("У назві «Вереснева вулиця» name:ru повинен бути «Вересневая улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Вересневая улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Весняна вулиця"]["name:ru"!="Весняная улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Весняна вулиця"]["name:ru"!="Весняная улица"] {
-  throwWarning: tr("У назві «Весняна вулиця» name:ru повинен бути «Весняная улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Весняна вулиця"]["name:ru"!="Весняная улица"].base_condition {
+  throwWarning: tr("У назві «Весняна вулиця» name:ru повинен бути «Весняная улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Весняная улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Гірська вулиця"]["name:ru"!="Горская улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Гірська вулиця"]["name:ru"!="Горская улица"] {
-  throwWarning: tr("У назві «Гірська вулиця» name:ru повинен бути «Горская улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Гірська вулиця"]["name:ru"!="Горская улица"].base_condition {
+  throwWarning: tr("У назві «Гірська вулиця» name:ru повинен бути «Горская улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Горская улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Груднева вулиця"]["name:ru"!="Грудневая улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Груднева вулиця"]["name:ru"!="Грудневая улица"] {
-  throwWarning: tr("У назві «Груднева вулиця» name:ru повинен бути «Грудневая улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Груднева вулиця"]["name:ru"!="Грудневая улица"].base_condition {
+  throwWarning: tr("У назві «Груднева вулиця» name:ru повинен бути «Грудневая улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Грудневая улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Джерельна вулиця"]["name:ru"!="Джерельная улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Джерельна вулиця"]["name:ru"!="Джерельная улица"] {
-  throwWarning: tr("У назві «Джерельна вулиця» name:ru повинен бути «Джерельная улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Джерельна вулиця"]["name:ru"!="Джерельная улица"].base_condition {
+  throwWarning: tr("У назві «Джерельна вулиця» name:ru повинен бути «Джерельная улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Джерельная улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Енергетична вулиця"]["name:ru"!="Энергетичная улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Енергетична вулиця"]["name:ru"!="Энергетичная улица"] {
-  throwWarning: tr("У назві «Енергетична вулиця» name:ru повинен бути «Энергетичная улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Енергетична вулиця"]["name:ru"!="Энергетичная улица"].base_condition {
+  throwWarning: tr("У назві «Енергетична вулиця» name:ru повинен бути «Энергетичная улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Энергетичная улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Жовтнева вулиця"]["name:ru"!="Жовтневая улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Жовтнева вулиця"]["name:ru"!="Жовтневая улица"] {
-  throwWarning: tr("У назві «Жовтнева вулиця» name:ru повинен бути «Жовтневая улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Жовтнева вулиця"]["name:ru"!="Жовтневая улица"].base_condition {
+  throwWarning: tr("У назві «Жовтнева вулиця» name:ru повинен бути «Жовтневая улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Жовтневая улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Залізнична вулиця"]["name:ru"!="Зализничная улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Залізнична вулиця"]["name:ru"!="Зализничная улица"] {
-  throwWarning: tr("У назві «Залізнична вулиця» name:ru повинен бути «Зализничная улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Залізнична вулиця"]["name:ru"!="Зализничная улица"].base_condition {
+  throwWarning: tr("У назві «Залізнична вулиця» name:ru повинен бути «Зализничная улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Зализничная улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Затишна вулиця"]["name:ru"!="Затишная улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Затишна вулиця"]["name:ru"!="Затишная улица"] {
-  throwWarning: tr("У назві «Затишна вулиця» name:ru повинен бути «Затишная улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Затишна вулиця"]["name:ru"!="Затишная улица"].base_condition {
+  throwWarning: tr("У назві «Затишна вулиця» name:ru повинен бути «Затишная улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Затишная улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Західна вулиця"]["name:ru"!="Захидная улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Західна вулиця"]["name:ru"!="Захидная улица"] {
-  throwWarning: tr("У назві «Західна вулиця» name:ru повинен бути «Захидная улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Західна вулиця"]["name:ru"!="Захидная улица"].base_condition {
+  throwWarning: tr("У назві «Західна вулиця» name:ru повинен бути «Захидная улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Захидная улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Землевпорядна вулиця"]["name:ru"!="Землевпорядная улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Землевпорядна вулиця"]["name:ru"!="Землевпорядная улица"] {
-  throwWarning: tr("У назві «Землевпорядна вулиця» name:ru повинен бути «Землевпорядная улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Землевпорядна вулиця"]["name:ru"!="Землевпорядная улица"].base_condition {
+  throwWarning: tr("У назві «Землевпорядна вулиця» name:ru повинен бути «Землевпорядная улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Землевпорядная улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Зіркова вулиця"]["name:ru"!="Зирковая улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Зіркова вулиця"]["name:ru"!="Зирковая улица"] {
-  throwWarning: tr("У назві «Зіркова вулиця» name:ru повинен бути «Зирковая улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Зіркова вулиця"]["name:ru"!="Зирковая улица"].base_condition {
+  throwWarning: tr("У назві «Зіркова вулиця» name:ru повинен бути «Зирковая улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Зирковая улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Зоряна вулиця"]["name:ru"!="Зоряная улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Зоряна вулиця"]["name:ru"!="Зоряная улица"] {
-  throwWarning: tr("У назві «Зоряна вулиця» name:ru повинен бути «Зоряная улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Зоряна вулиця"]["name:ru"!="Зоряная улица"].base_condition {
+  throwWarning: tr("У назві «Зоряна вулиця» name:ru повинен бути «Зоряная улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Зоряная улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Зразкова вулиця"]["name:ru"!="Зразковая улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Зразкова вулиця"]["name:ru"!="Зразковая улица"] {
-  throwWarning: tr("У назві «Зразкова вулиця» name:ru повинен бути «Зразковая улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Зразкова вулиця"]["name:ru"!="Зразковая улица"].base_condition {
+  throwWarning: tr("У назві «Зразкова вулиця» name:ru повинен бути «Зразковая улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Зразковая улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Квіткова вулиця"]["name:ru"!="Квитковая улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Квіткова вулиця"]["name:ru"!="Квитковая улица"] {
-  throwWarning: tr("У назві «Квіткова вулиця» name:ru повинен бути «Квитковая улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Квіткова вулиця"]["name:ru"!="Квитковая улица"].base_condition {
+  throwWarning: tr("У назві «Квіткова вулиця» name:ru повинен бути «Квитковая улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Квитковая улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Квітнева вулиця"]["name:ru"!="Квитневая улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Квітнева вулиця"]["name:ru"!="Квитневая улица"] {
-  throwWarning: tr("У назві «Квітнева вулиця» name:ru повинен бути «Квитневая улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Квітнева вулиця"]["name:ru"!="Квитневая улица"].base_condition {
+  throwWarning: tr("У назві «Квітнева вулиця» name:ru повинен бути «Квитневая улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Квитневая улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Керамічна вулиця"]["name:ru"!="Керамичная улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Керамічна вулиця"]["name:ru"!="Керамичная улица"] {
-  throwWarning: tr("У назві «Керамічна вулиця» name:ru повинен бути «Керамичная улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Керамічна вулиця"]["name:ru"!="Керамичная улица"].base_condition {
+  throwWarning: tr("У назві «Керамічна вулиця» name:ru повинен бути «Керамичная улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Керамичная улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Колгоспна вулиця"]["name:ru"!="Колгоспная улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Колгоспна вулиця"]["name:ru"!="Колгоспная улица"] {
-  throwWarning: tr("У назві «Колгоспна вулиця» name:ru повинен бути «Колгоспная улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Колгоспна вулиця"]["name:ru"!="Колгоспная улица"].base_condition {
+  throwWarning: tr("У назві «Колгоспна вулиця» name:ru повинен бути «Колгоспная улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Колгоспная улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Липнева вулиця"]["name:ru"!="Липневая улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Липнева вулиця"]["name:ru"!="Липневая улица"] {
-  throwWarning: tr("У назві «Липнева вулиця» name:ru повинен бути «Липневая улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Липнева вулиця"]["name:ru"!="Липневая улица"].base_condition {
+  throwWarning: tr("У назві «Липнева вулиця» name:ru повинен бути «Липневая улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Липневая улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Лісова вулиця"]["name:ru"!="Лесовая улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Лісова вулиця"]["name:ru"!="Лесовая улица"] {
-  throwWarning: tr("У назві «Лісова вулиця» name:ru повинен бути «Лесовая улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Лісова вулиця"]["name:ru"!="Лесовая улица"].base_condition {
+  throwWarning: tr("У назві «Лісова вулиця» name:ru повинен бути «Лесовая улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Лесовая улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Лютнева вулиця"]["name:ru"!="Лютневая улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Лютнева вулиця"]["name:ru"!="Лютневая улица"] {
-  throwWarning: tr("У назві «Лютнева вулиця» name:ru повинен бути «Лютневая улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Лютнева вулиця"]["name:ru"!="Лютневая улица"].base_condition {
+  throwWarning: tr("У назві «Лютнева вулиця» name:ru повинен бути «Лютневая улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Лютневая улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Медичний провулок"]["name:ru"!="Медичный переулок"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Медичний провулок"]["name:ru"!="Медичный переулок"] {
-  throwWarning: tr("У назві «Медичний провулок» name:ru повинен бути «Медичный переулок» замість «{1}»", "{1.value}");
+*["name:ru"][name="Медичний провулок"]["name:ru"!="Медичный переулок"].base_condition {
+  throwWarning: tr("У назві «Медичний провулок» name:ru повинен бути «Медичный переулок» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Медичный переулок";
 }
-way[highway]["name:ru"][inside("UA")][name="Мисливська вулиця"]["name:ru"!="Мыслывская улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Мисливська вулиця"]["name:ru"!="Мыслывская улица"] {
-  throwWarning: tr("У назві «Мисливська вулиця» name:ru повинен бути «Мыслывская улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Мисливська вулиця"]["name:ru"!="Мыслывская улица"].base_condition {
+  throwWarning: tr("У назві «Мисливська вулиця» name:ru повинен бути «Мыслывская улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Мыслывская улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Незалежна вулиця"]["name:ru"!="Незалежная улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Незалежна вулиця"]["name:ru"!="Незалежная улица"] {
-  throwWarning: tr("У назві «Незалежна вулиця» name:ru повинен бути «Незалежная улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Незалежна вулиця"]["name:ru"!="Незалежная улица"].base_condition {
+  throwWarning: tr("У назві «Незалежна вулиця» name:ru повинен бути «Незалежная улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Незалежная улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Першотравнева вулиця"]["name:ru"!="Першотравневая улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Першотравнева вулиця"]["name:ru"!="Першотравневая улица"] {
-  throwWarning: tr("У назві «Першотравнева вулиця» name:ru повинен бути «Першотравневая улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Першотравнева вулиця"]["name:ru"!="Першотравневая улица"].base_condition {
+  throwWarning: tr("У назві «Першотравнева вулиця» name:ru повинен бути «Першотравневая улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Першотравневая улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Південна вулиця"]["name:ru"!="Пивденная улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Південна вулиця"]["name:ru"!="Пивденная улица"] {
-  throwWarning: tr("У назві «Південна вулиця» name:ru повинен бути «Пивденная улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Південна вулиця"]["name:ru"!="Пивденная улица"].base_condition {
+  throwWarning: tr("У назві «Південна вулиця» name:ru повинен бути «Пивденная улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Пивденная улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Північна вулиця"]["name:ru"!="Пивничная улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Північна вулиця"]["name:ru"!="Пивничная улица"] {
-  throwWarning: tr("У назві «Північна вулиця» name:ru повинен бути «Пивничная улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Північна вулиця"]["name:ru"!="Пивничная улица"].base_condition {
+  throwWarning: tr("У назві «Північна вулиця» name:ru повинен бути «Пивничная улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Пивничная улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Прикордонна вулиця"]["name:ru"!="Прикордонная улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Прикордонна вулиця"]["name:ru"!="Прикордонная улица"] {
-  throwWarning: tr("У назві «Прикордонна вулиця» name:ru повинен бути «Прикордонная улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Прикордонна вулиця"]["name:ru"!="Прикордонная улица"].base_condition {
+  throwWarning: tr("У назві «Прикордонна вулиця» name:ru повинен бути «Прикордонная улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Прикордонная улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Промислова вулиця"]["name:ru"!="Промысловая улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Промислова вулиця"]["name:ru"!="Промысловая улица"] {
-  throwWarning: tr("У назві «Промислова вулиця» name:ru повинен бути «Промысловая улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Промислова вулиця"]["name:ru"!="Промысловая улица"].base_condition {
+  throwWarning: tr("У назві «Промислова вулиця» name:ru повинен бути «Промысловая улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Промысловая улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Ринкова вулиця"]["name:ru"!="Рынковая улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Ринкова вулиця"]["name:ru"!="Рынковая улица"] {
-  throwWarning: tr("У назві «Ринкова вулиця» name:ru повинен бути «Рынковая улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Ринкова вулиця"]["name:ru"!="Рынковая улица"].base_condition {
+  throwWarning: tr("У назві «Ринкова вулиця» name:ru повинен бути «Рынковая улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Рынковая улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Селянська вулиця"]["name:ru"!="Селянская улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Селянська вулиця"]["name:ru"!="Селянская улица"] {
-  throwWarning: tr("У назві «Селянська вулиця» name:ru повинен бути «Селянская улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Селянська вулиця"]["name:ru"!="Селянская улица"].base_condition {
+  throwWarning: tr("У назві «Селянська вулиця» name:ru повинен бути «Селянская улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Селянская улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Серпнева вулиця"]["name:ru"!="Серпневая улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Серпнева вулиця"]["name:ru"!="Серпневая улица"] {
-  throwWarning: tr("У назві «Серпнева вулиця» name:ru повинен бути «Серпневая улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Серпнева вулиця"]["name:ru"!="Серпневая улица"].base_condition {
+  throwWarning: tr("У назві «Серпнева вулиця» name:ru повинен бути «Серпневая улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Серпневая улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Січнева вулиця"]["name:ru"!="Сичневая улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Січнева вулиця"]["name:ru"!="Сичневая улица"] {
-  throwWarning: tr("У назві «Січнева вулиця» name:ru повинен бути «Сичневая улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Січнева вулиця"]["name:ru"!="Сичневая улица"].base_condition {
+  throwWarning: tr("У назві «Січнева вулиця» name:ru повинен бути «Сичневая улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Сичневая улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Срібна вулиця"]["name:ru"!="Сребная улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Срібна вулиця"]["name:ru"!="Сребная улица"] {
-  throwWarning: tr("У назві «Срібна вулиця» name:ru повинен бути «Сребная улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Срібна вулиця"]["name:ru"!="Сребная улица"].base_condition {
+  throwWarning: tr("У назві «Срібна вулиця» name:ru повинен бути «Сребная улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Сребная улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Ставкова вулиця"]["name:ru"!="Ставковая улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Ставкова вулиця"]["name:ru"!="Ставковая улица"] {
-  throwWarning: tr("У назві «Ставкова вулиця» name:ru повинен бути «Ставковая улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Ставкова вулиця"]["name:ru"!="Ставковая улица"].base_condition {
+  throwWarning: tr("У назві «Ставкова вулиця» name:ru повинен бути «Ставковая улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Ставковая улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Старомлинська вулиця"]["name:ru"!="Старомлынская улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Старомлинська вулиця"]["name:ru"!="Старомлынская улица"] {
-  throwWarning: tr("У назві «Старомлинська вулиця» name:ru повинен бути «Старомлынская улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Старомлинська вулиця"]["name:ru"!="Старомлынская улица"].base_condition {
+  throwWarning: tr("У назві «Старомлинська вулиця» name:ru повинен бути «Старомлынская улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Старомлынская улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Степова вулиця"]["name:ru"!="Степовая улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Степова вулиця"]["name:ru"!="Степовая улица"] {
-  throwWarning: tr("У назві «Степова вулиця» name:ru повинен бути «Степовая улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Степова вулиця"]["name:ru"!="Степовая улица"].base_condition {
+  throwWarning: tr("У назві «Степова вулиця» name:ru повинен бути «Степовая улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Степовая улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Східна вулиця"]["name:ru"!="Схидная улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Східна вулиця"]["name:ru"!="Схидная улица"] {
-  throwWarning: tr("У назві «Східна вулиця» name:ru повинен бути «Схидная улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Східна вулиця"]["name:ru"!="Схидная улица"].base_condition {
+  throwWarning: tr("У назві «Східна вулиця» name:ru повинен бути «Схидная улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Схидная улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Травнева вулиця"]["name:ru"!="Травневая улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Травнева вулиця"]["name:ru"!="Травневая улица"] {
-  throwWarning: tr("У назві «Травнева вулиця» name:ru повинен бути «Травневая улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Травнева вулиця"]["name:ru"!="Травневая улица"].base_condition {
+  throwWarning: tr("У назві «Травнева вулиця» name:ru повинен бути «Травневая улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Травневая улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Цегельна вулиця"]["name:ru"!="Цегельная улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Цегельна вулиця"]["name:ru"!="Цегельная улица"] {
-  throwWarning: tr("У назві «Цегельна вулиця» name:ru повинен бути «Цегельная улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Цегельна вулиця"]["name:ru"!="Цегельная улица"].base_condition {
+  throwWarning: tr("У назві «Цегельна вулиця» name:ru повинен бути «Цегельная улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Цегельная улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Червнева вулиця"]["name:ru"!="Червневая улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Червнева вулиця"]["name:ru"!="Червневая улица"] {
-  throwWarning: tr("У назві «Червнева вулиця» name:ru повинен бути «Червневая улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Червнева вулиця"]["name:ru"!="Червневая улица"].base_condition {
+  throwWarning: tr("У назві «Червнева вулиця» name:ru повинен бути «Червневая улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Червневая улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Червона вулиця"]["name:ru"!="Червоная улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Червона вулиця"]["name:ru"!="Червоная улица"] {
-  throwWarning: tr("У назві «Червона вулиця» name:ru повинен бути «Червоная улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Червона вулиця"]["name:ru"!="Червоная улица"].base_condition {
+  throwWarning: tr("У назві «Червона вулиця» name:ru повинен бути «Червоная улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Червоная улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Червоногірна вулиця"]["name:ru"!="Червоногорная улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Червоногірна вулиця"]["name:ru"!="Червоногорная улица"] {
-  throwWarning: tr("У назві «Червоногірна вулиця» name:ru повинен бути «Червоногорная улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Червоногірна вулиця"]["name:ru"!="Червоногорная улица"].base_condition {
+  throwWarning: tr("У назві «Червоногірна вулиця» name:ru повинен бути «Червоногорная улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Червоногорная улица";
 }
-way[highway]["name:ru"][inside("UA")][name="Червоногірська вулиця"]["name:ru"!="Червоногорская улица"],
-relation[type=associatedStreet]["name:ru"][inside("UA")][name="Червоногірська вулиця"]["name:ru"!="Червоногорская улица"] {
-  throwWarning: tr("У назві «Червоногірська вулиця» name:ru повинен бути «Червоногорская улица» замість «{1}»", "{1.value}");
+*["name:ru"][name="Червоногірська вулиця"]["name:ru"!="Червоногорская улица"].base_condition {
+  throwWarning: tr("У назві «Червоногірська вулиця» name:ru повинен бути «Червоногорская улица» замість «{0}»", "{0.value}");
   group: tr("Російська назва не відповідає правилам перекладу власних назв");
   fixAdd: "name:ru=Червоногорская улица";
 }

@@ -1,5 +1,4 @@
 import argparse
-import warnings
 
 from colorama import init, Fore
 
@@ -31,7 +30,7 @@ for name_uk in from_map:
   else:
     old_name_ru = to_map[name_uk]
     if name_ru != old_name_ru:
-      print(Fore.RED + "duplicate key:", name_uk, '\nold:', old_name_ru, '\nnew:', name_ru)
+      print(Fore.RED + 'duplicate key:', name_uk, '\nold:', old_name_ru, '\nnew:', name_ru)
 
 parsed_args.to.seek(0)
 parsed_args.to.truncate()
@@ -41,5 +40,3 @@ for name_uk in sorted(to_map):
   parsed_args.to.write(';')
   parsed_args.to.write(to_map[name_uk])
   parsed_args.to.write('\n')
-
-#print(to_map)

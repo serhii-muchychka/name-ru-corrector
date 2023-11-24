@@ -1,11 +1,11 @@
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-t", "--translations", default="translations/translations.txt", type=argparse.FileType(encoding="utf-8"))
-parser.add_argument("-o", "--output", default="ua-name-ru.validator.mapcss", type=argparse.FileType(mode='w', encoding="utf-8"))
+parser.add_argument('-t', '--translations', default='translations/translations.txt', type=argparse.FileType(encoding='utf-8'))
+parser.add_argument('-o', '--output', default='ua-name-ru.validator.mapcss', type=argparse.FileType(mode='w', encoding='utf-8'))
 parsed_args = parser.parse_args()
 
-with open("ua-name-ru.validator.mapcss.head.txt", encoding="utf-8") as head_file:
+with open('ua-name-ru.validator.mapcss.head.txt', encoding='utf-8') as head_file:
   parsed_args.output.write(head_file.read())
 
 for line in parsed_args.translations:
